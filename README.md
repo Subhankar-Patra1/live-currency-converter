@@ -1,120 +1,146 @@
-# Currency Converter
+# 💱 Currency Converter
 
-Welcome to **Currency Converter** – a modern, AI-powered web application for converting currencies with ease and accuracy. Built using Next.js, TypeScript, and Tailwind CSS, this project leverages advanced AI and cloud-native technologies to deliver a seamless user experience.
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Build with Next.js](https://img.shields.io/badge/Next.js-powered-black.svg)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue.svg)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38b2ac.svg)](https://tailwindcss.com/)
+[![Status](https://img.shields.io/badge/status-active-brightgreen.svg)]()
+
+Welcome to **Currency Converter** – a modern, AI-enhanced web application that delivers fast and accurate currency conversions. Built using **Next.js**, **TypeScript**, and **Tailwind CSS**, it leverages AI and cloud-native architecture to provide a seamless developer and user experience.
 
 ---
 
 ## ✨ Features
 
-- **Real-time Currency Conversion**  
-  Instantly convert between multiple currencies with up-to-date exchange rates.
+- ⚡ **Real-Time Currency Conversion**  
+  Convert between multiple currencies using live exchange rates.
 
-- **AI Integration**  
-  Utilizes AI-powered backend logic for enhanced accuracy and smart suggestions.
+- 🤖 **AI-Powered Backend**  
+  Smart suggestions and logic enhancements via integrated AI models.
 
-- **Modern UI**  
-  Responsive and accessible interface styled with Tailwind CSS.
+- 🎨 **Modern UI & UX**  
+  Fully responsive interface with dark mode support, built with Tailwind CSS.
 
-- **Extensible Architecture**  
-  Modular codebase with clear separation of concerns:  
-  - `src/ai` – AI logic and integrations  
-  - `src/app` – Next.js app routes and pages  
-  - `src/components` – Reusable UI components  
-  - `src/hooks` – Custom React hooks  
-  - `src/lib` – Utility libraries and backend logic  
-  - `src/types` – TypeScript type definitions
+- 🧱 **Scalable Codebase**  
+  Modular architecture for easy extension and collaboration:
+  ```
+  src/
+  ├── ai/         → AI logic and integrations
+  ├── app/        → App routes (Next.js)
+  ├── components/ → Reusable UI parts
+  ├── hooks/      → Custom React hooks
+  ├── lib/        → Utility logic and backend functions
+  └── types/      → TypeScript types
+  ```
 
-- **Progressive Web App**  
-  Manifest and icons included for installable, offline-capable experience.
+- 📲 **Progressive Web App (PWA)**  
+  Includes manifest, icons, and offline-ready capabilities.
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 🧰 Prerequisites
 
 - [Node.js](https://nodejs.org/) (v16+ recommended)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### Installation
+### 📥 Installation
 
-1. **Clone the repository:**
+1. **Clone the repo:**
 
-   ```sh
-   git clone https://github.com/your-username/currency-converter.git
-   cd currency-converter
+   ```bash
+   git clone https://github.com/Subhankar-Patra1/live-currency-converter.git
+   cd live-currency-converter
    ```
 
 2. **Install dependencies:**
 
-   ```sh
+   ```bash
    npm install
    # or
    yarn install
    ```
 
-3. **Configure environment variables:**
+3. **Setup environment variables:**
 
-   Copy `.env.example` to `.env` and fill in any required API keys or settings.
+   Copy the provided `.env.example` file and rename it to `.env`. Then, fill in your API keys:
 
-   ```sh
+   ```bash
    cp .env.example .env
+   ```
+
+   Example variables:
+   ```env
+   GOOGLE_API_KEY=your-google-api-key-here
+   EXCHANGE_API_KEY=your-exchange-api-key-here
    ```
 
 4. **Run the development server:**
 
-   ```sh
+   ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-   Open [http://localhost:3000](http://localhost:3000) to view the app.
+   Visit [http://localhost:3000](http://localhost:3000) to see the app.
 
 ---
 
-## 🛠️ Project Structure
+## 🧾 Environment Variables
 
+Your `.env` file should contain:
+
+```env
+GOOGLE_API_KEY=your-real-key
+EXCHANGE_API_KEY=your-real-key
 ```
-.
-├── src/
-│   ├── ai/           # AI logic and integrations
-│   ├── app/          # Next.js app routes and pages
-│   ├── components/   # Reusable UI components
-│   ├── hooks/        # Custom React hooks
-│   ├── lib/          # Utility libraries and backend logic
-│   └── types/        # TypeScript type definitions
-├── public/           # Static assets (icons, manifest)
-├── .env              # Environment variables
-├── tailwind.config.ts
-├── next.config.ts
-├── package.json
-└── ...
-```
+
+> Never commit real API keys. `.env` is ignored via `.gitignore`.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js + TypeScript + Tailwind CSS
+- **AI:** Integrated AI logic under `src/ai`
+- **Backend Utils:** Cloud-native logic in `src/lib`
+- **PWA:** Configured for offline support and mobile installability
 
 ---
 
 ## 📦 Deployment
 
-You can build and start the app for production:
+You can deploy this app to platforms like:
 
-```sh
+- [**Vercel**](https://vercel.com/)
+- [**Netlify**](https://netlify.com/)
+- [**Render**](https://render.com/)
+
+### For production build:
+
+```bash
 npm run build
 npm run start
 ```
+
+> Don’t forget to set the same environment variables in your hosting dashboard.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please open issues or pull requests for improvements and bug fixes.
+Pull requests and contributions are welcome!  
+Feel free to open issues for bugs, enhancements, or discussions.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+Licensed under the [MIT License](LICENSE).
 
 ---
 
-**Enjoy using Currency Converter!**
+**🌍 Built with ❤️ by Subhankar Patra**  
+_Transforming global currency access with speed, AI, and simplicity._
